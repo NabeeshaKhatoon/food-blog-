@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+}
+body {
+    background-image: url(https://images.pexels.com/photos/7130479/pexels-photo-7130479.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(11, 11, 11);
+    padding: 15px;
+}
+.navbar {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+.navbar li a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+.navbar li a:hover {
+    background-color: rgb(181, 102, 56);
+    border-radius: 50px;
+}
+.logo img {
+    width: 90px; 
+    height: 50px;
+}
+.pic img {
+    margin-left: 33px;
+    border-radius: 50%; 
+    height: 400px; 
+    width: 400px; 
+    margin-top: 20px;
+    box-shadow: 3px 3px 3px 5px rgb(198, 96, 12);
+}
+.button-container {
+    margin-top: 450px;
+    padding-left: 180px;
+    display: flex;
+    position: absolute;
+}
+.button-container button {
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: rgb(181, 102, 56);
+    color: white; 
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer; 
+}
+.about {
+    margin-left: 70px;
+    color: rgb(84, 77, 77);
+    margin-top: 26px;
+    font-size: 20px;
+}
+.hero {
+    display: flex; 
+}
+span {
+    color: rgb(237, 87, 0);
+}
+p {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(105, 93, 93);
+}
+.mahi {
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(76, 70, 70);
+    font-weight: 3000;
+}
+h2 {
+    font-size: 35px;
+    margin-top: 30px;
+    color: rgb(84, 77, 77);
+}
+@media screen and (max-width: 768px) {
+    button{
+       margin-top: 630px;
+       margin-right: 200px;
+    }
+    .hero {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .pic img {
+        height: 300px;
+        width: 300px; 
+        margin: 20px 0; 
+    }
+    .about {
+        margin-left: 0;
+        text-align: center; 
+    }
+}

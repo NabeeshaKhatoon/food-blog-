@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('https://www.bing.com/th/id/OGC.2f56b471a2d0eab1cf6731760f39547d?pid=1.7&rurl=http%3a%2f%2f31.media.tumblr.com%2f8abfaad6ecf3132213a391c4daba7047%2ftumblr_mzf8dtHu8d1s8dcp7o1_400.gif&ehk=%2fdXL1Af%2fKo8ePYtk9uKNVaXp7JTZrkndvMacDDRlFz0%3d');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(11, 11, 11);
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.navbar li a {
+    color: #fff; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: rgb(181, 102, 56);
+    border-radius: 50px;
+}
+
+.logo img {
+    width: 50px; 
+    height: 45px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding: 20px;
+}
+.welcome-text {
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 20px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .navbar li {
+        margin: 5px 0;
+    }
+    .welcome-text {
+        font-size: 6vw;
+        margin-top: 30px;
+    }
+}
